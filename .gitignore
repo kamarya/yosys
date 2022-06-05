@@ -1,0 +1,8 @@
+*.h
+*.blif
+tb
+tb_inspect
+firmware.json
+firmware.asc
+firmware.bin
+.vscode/
