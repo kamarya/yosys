@@ -8,7 +8,7 @@ cd $HOME/opt
 if [ ! -d yosys-done ];then
 git clone --recursive --depth=1 https://github.com/YosysHQ/yosys
 cd yosys
-make -j 4
+make PREFIX=$HOME/opt -j 4
 make install DESTDIR=$HOME/opt PREFIX=/
 cd ..
 mv yosys yosys-done
